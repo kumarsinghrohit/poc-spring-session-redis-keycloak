@@ -15,8 +15,3 @@
   Valid Redirect URIs in keycloak client settings. in this way we can create many applications sharing the same keycloak.realm and keycloak.resource.
   - Now we can check values in Redis-cli(using "keys *" command) and we can see that a single sesion ID per user is created for keycloak-Session for all 
   applications.
-
-## What has been not achieved:
-  - Let's say we have two application authenticated via keycloak and sharing the same realm, we run both applications on different browsers.
-  while creating the POC task we also targeted to find a way so that once a user is logged into any of the application, he should not be asked to
-  login again into the other application(though they are running on different browsers).
